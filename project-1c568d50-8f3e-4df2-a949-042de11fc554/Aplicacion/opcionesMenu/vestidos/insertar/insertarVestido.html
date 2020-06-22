@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>INSERTAR VESTIDO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../../css/estilo.css">
+        <link rel="icon" type="image/png" href="../../../logo/favicon.png">
+    </head>
+    <body>
+        <img id="logopareja" src="../../../logo/LOGODEFINITIVO.png"/>
+        <p id="titulop" style='margin-left: 330px;'> INSERTAR VESTIDO </p>
+        
+        <!-- Hacemos un formulario que va a enviar la información a insertarPareja.php
+        mediante el método POST, el nombre que pongamos en name es el que tenemos que
+        utilizar en insertarVestido.php-->
+        <form action="insertarVestido.php" method="POST">
+            <fieldset>
+                    <p class="pF"> idVestido: 
+                        <input class="iF" type="text" name="idVestido" placeholder=" id del Vestido" autofocus="">
+                    </p>
+                    <p class="pF"> Descripción: 
+                        <input class="iF" type="text" name="descripcion" placeholder=" Descripción del vestido">
+                    </p>
+                    <p class="pF"> Precio: 
+                        <input class="iF" type="text" name="precio" placeholder=" Precio del vestido">
+                    </p>
+                    <center>
+                        <p class="pF"><input id="botonInsertarVestido" type="submit" value="INSERTAR" name="insertar"/></p>
+                    </center>
+                    
+            </fieldset>    
+        </form>  
+        
+        <!-- Botón menú principal -->
+        <div>
+            <p style="text-align: center; margin-top: 30px; font-size: 20px">
+                <a id="botonMenuPrincipal" href="../vestidos.php">VOLVER A VESTIDOS</a>
+            <p>
+        </div>
+    </body>
+</html>

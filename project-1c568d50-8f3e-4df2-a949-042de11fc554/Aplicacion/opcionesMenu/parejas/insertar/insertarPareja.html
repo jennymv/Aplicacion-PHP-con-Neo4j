@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INSERTAR PAREJA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../../css/estilo.css">
+        <link rel="icon" type="image/png" href="../../../logo/favicon.png">
+    </head>
+    <body>
+        <img id="logopareja" src="../../../logo/LOGODEFINITIVO.png"/>
+        <p id="titulop" style='margin-left: 350px;'> INSERTAR PAREJA </p>
+        
+        <!-- Hacemos un formulario que va a enviar la información a insertarPareja.php
+        mediante el método POST, el nombre que pongamos en name es el que tenemos que
+        utilizar en insertarPareja.php-->
+        <form action="insertarPareja.php" method="POST">
+            <fieldset>
+                    <p class="pF"> idPareja: 
+                        <input class="iF" type="text" name="idPareja" placeholder=" id de la Pareja" autofocus="">
+                    </p>
+                    
+                    <p class="pF"> Nombre1: 
+                        <input class="iF" type="text" name="nombre1" placeholder=" Nombre1 de la Pareja">
+                    </p>
+                    
+                    <p class="pF"> Nombre2: 
+                        <input class="iF" type="text" name="nombre2" placeholder=" Nombre2 de la Pareja">
+                    </p>
+                    
+                    <p class="pF"> Domicilio: 
+                        <input class="iF" type="text" name="domicilio" placeholder=" Domicilio de la Pareja">
+                    </p>
+                    
+                    <p class="pF"> Fecha Boda: 
+                        <input class="iF" type="text" name="fechaBoda" placeholder=" Fecha de la Boda">
+                    </p>
+                    
+                    <center>
+                        <p><input id="botonInsertarPareja" type="submit" value="INSERTAR" name="insertar"/></p>
+                    </center>
+                    
+            </fieldset>    
+        </form>  
+        
+        <!-- Botón menú principal -->
+        <div>
+            <p style="text-align: center; margin-top: 30px; font-size: 20px"><a id="botonMenuPrincipal" href="../parejas.php">VOLVER A PAREJAS</a><p>
+        </div>
+    </body>
+</html>
